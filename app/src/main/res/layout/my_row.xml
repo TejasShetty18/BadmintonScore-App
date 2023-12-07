@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginLeft="5dp"
+    android:padding="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="240dp">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/a1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="Team One"
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/a2"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:text=""
+                android:gravity="center"
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/a3"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:text="TextView 3"
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/player1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="TextView 1"
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/player2"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="TextView 2"
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/points1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/blue"
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/a5"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="Team Two"
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/a6"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:text=""
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/a7"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="TextView 3"
+                android:gravity="center"
+                android:visibility="invisible"
+
+                android:layout_margin="4dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/player3"
+
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="TextView 1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/player4"
+
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="TextView 2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/points2"
+                android:textColor="@color/blue"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text=""
+
+                android:gravity="center"
+
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

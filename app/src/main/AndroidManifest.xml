@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/badminton"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/badminton"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BadmintonScore"
+        tools:targetApi="31">
+        <activity
+            android:name=".startingpage"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultPage"
+            android:exported="false" />
+        <activity
+            android:name=".SinglePlayerGame"
+            android:exported="false" />
+        <activity
+            android:name=".DoubleGameSetup"
+            android:exported="false" />
+        <activity
+            android:name=".DoubleGamePage"
+            android:exported="false" />
+        <activity
+            android:name=".SingleGamePage"
+            android:exported="false" />
+        <activity
+            android:name=".SingleGameSetup"
+            android:exported="false" />
+        <activity
+            android:name=".ExternalDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".PlayerList"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>

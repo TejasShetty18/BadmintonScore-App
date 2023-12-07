@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Shuttlecock logo -->
+
+    <!-- Title "Badminton Score" -->
+
+    <!-- Settings logo -->
+
+    <!-- Title "New Match" -->
+
+    <!-- Single and Double buttons -->
+
+    <!-- Match History -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="47dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/shuttlecock" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="675dp"
+        android:layout_toEndOf="@id/logo"
+        android:text="Badminton Score"
+        android:textAlignment="center"
+        android:textColorHighlight="@color/black"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="353dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/setting" />
+
+    <TextView
+        android:id="@+id/new_match_title"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="center"
+        android:text="New Match"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_match_title"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/single_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:text="Single"
+            />
+
+        <Button
+            android:id="@+id/double_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:text="Double" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/match_history1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="50dp"
+        android:text="Match History"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/match_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="186dp"
+        android:layout_below="@+id/match_history1"
+        android:text="History"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/clear"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Clear History" />
+
+</RelativeLayout>

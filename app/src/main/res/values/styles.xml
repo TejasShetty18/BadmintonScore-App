@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <!-- Customize attributes for the light theme -->
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <!-- Add other attributes as needed -->
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <!-- Customize attributes for the dark theme -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <!-- Add other attributes as needed -->
+    </style>
+</resources>

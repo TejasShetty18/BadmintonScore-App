@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:contentDescription="Back Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+           android:src="@drawable/back_btn"
+            />
+
+        <TextView
+            android:id="@+id/setUp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="SetUp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/purple">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/scoreBoard"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="150dp">
+
+            <TextView
+                android:id="@+id/P1name"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="Player 1 :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/P1Set1score"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/P1Set2score"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="200dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/P1Set3score"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="250dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/P2name"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Player 2 :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/P2Set1score"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/P2Set2score"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/P2Set3score"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/court"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/headerLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="70dp"
+            android:layout_height="220dp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_below="@+id/editAnswer"
+            android:layout_marginStart="8dp"
+            android:text="+1" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/courtLayout"
+            android:layout_width="540dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="520dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/badminton_court"
+                android:background="@color/black"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/player1"
+                android:layout_width="140dp"
+                android:layout_height="93dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="110dp"
+                android:text="Player 1"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/player1demo"
+                android:layout_width="140dp"
+                android:layout_height="93dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/player2"
+                android:layout_width="140dp"
+                android:layout_height="93dp"
+                android:layout_marginLeft="340dp"
+                android:layout_marginTop="15dp"
+                android:text="Player 2"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/player2demo"
+                android:layout_width="140dp"
+                android:layout_height="93dp"
+                android:layout_marginLeft="340dp"
+                android:layout_marginTop="110dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="70dp"
+            android:layout_height="220dp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_below="@+id/editAnswer"
+            android:layout_marginStart="8dp"
+            android:text="+1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/court"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Player1name"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:text="Player 1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/serve"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="serve to "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/Player2name"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="Player 2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/undoButton"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:contentDescription="Undo Button"
+            android:layout_marginLeft="340dp"
+            android:src="@drawable/undo_btn"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

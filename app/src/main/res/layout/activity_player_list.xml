@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button (Arrow Mark) -->
+
+    <!-- Player List Heading -->
+
+   <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:contentDescription="Back Button"
+        android:src="@drawable/back_icon" />
+
+    <!-- Player List Description -->
+
+    <TextView
+        android:id="@+id/playerListHeading"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="121dp"
+        android:text="Player List"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/playerListDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Players who played matched"
+        android:textSize="16sp"
+        android:layout_below="@id/playerListHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="395dp"
+        android:layout_height="558dp"
+        android:layout_below="@id/playerListDescription"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
